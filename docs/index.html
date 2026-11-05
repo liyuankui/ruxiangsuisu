@@ -65,38 +65,38 @@ section{padding:40px 0 4px}
 .term.call{border-left:4px solid var(--bing)}
 .term.hidden{display:none}
 
-/* survival kit */
-.survival{background:var(--ink);color:#f4efe4;border-radius:18px;padding:24px 22px;margin:0 0 28px}
-.survival h2{font-family:var(--serif);font-size:22px;color:#f4efe4;margin-bottom:4px}
-.survival h2 em{font-style:normal;color:#e8b96a}
-.survival .sub{font-size:13px;color:rgba(244,239,228,.7);margin-bottom:16px}
+/* survival kit —— 与全站同语言：纸白卡片 + 墨色边框 + 红色单强调 */
+.survival{background:var(--paper);border:1.5px solid var(--ink);border-radius:14px;padding:22px 20px;margin:0 0 28px;box-shadow:2px 2px 0 rgba(34,30,24,.12)}
+.survival h2{font-family:var(--serif);font-size:20px;color:var(--ink);margin-bottom:4px}
+.survival h2 em{font-style:normal;color:var(--bing)}
+.survival .sub{font-size:13px;color:#5c5445;margin-bottom:14px}
 .suv-grid{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
 @media(max-width:540px){.suv-grid{grid-template-columns:1fr}}
-.suv{background:rgba(244,239,228,.08);border:1px solid rgba(244,239,228,.2);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
-.suv .n{font-family:var(--serif);font-weight:900;font-size:20px;color:#e8b96a;width:28px;flex-shrink:0;text-align:center}
-.suv .en{font-weight:800;font-size:15px;color:#fff}
-.suv .ipa{font-size:12px;color:rgba(244,239,228,.5);margin-left:4px}
-.suv .zh{font-size:13px;color:rgba(244,239,228,.85);margin-top:2px}
-.suv .when{font-size:12px;color:#e8b96a;margin-top:4px;font-style:italic}
-.dialog{background:rgba(244,239,228,.05);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:13px}
-.dialog b{color:#e8b96a}
-.dialog .line{margin:4px 0;color:rgba(244,239,228,.85)}
-.dialog .line .sp{font-weight:700;color:#fff}
+.suv{background:var(--cream);border:1px solid rgba(34,30,24,.18);border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
+.suv .n{font-family:var(--serif);font-weight:900;font-size:20px;color:var(--bing);width:28px;flex-shrink:0;text-align:center}
+.suv .en{font-weight:800;font-size:15px;color:var(--ink)}
+.suv .ipa{font-size:12px;color:#8a8172;margin-left:4px}
+.suv .zh{font-size:13px;color:#4a443a;margin-top:2px}
+.suv .when{font-size:12px;color:#8a8172;margin-top:4px;font-style:italic}
+.dialog{background:var(--cream);border:1px solid rgba(34,30,24,.18);border-radius:10px;padding:14px 16px;margin-top:14px;font-size:13px}
+.dialog b{color:var(--bing)}
+.dialog .line{margin:4px 0;color:#4a443a}
+.dialog .line .sp{font-weight:700;color:var(--ink)}
 .dialog .arr{color:#8a8172}
-/* compliments & gestures */
+/* compliments & gestures —— 同一套纸白卡片，仅用蓝色/墨色区分，不再自造色板 */
 .comp-grid{display:grid;gap:8px;grid-template-columns:repeat(2,1fr);margin-top:12px}
 @media(max-width:540px){.comp-grid{grid-template-columns:1fr}}
-.comp{background:rgba(46,110,78,.12);border:1px solid rgba(46,110,78,.3);border-radius:10px;padding:10px 14px}
-.comp .en{font-weight:800;font-size:14px;color:#6fcf97}
-.comp .zh{font-size:12px;color:rgba(244,239,228,.8);margin-top:2px}
-.comp .when{font-size:11.5px;color:#e8b96a;margin-top:3px;font-style:italic}
+.comp{background:var(--cream);border:1px solid rgba(34,30,24,.18);border-radius:10px;padding:10px 14px}
+.comp .en{font-weight:800;font-size:14px;color:var(--li)}
+.comp .zh{font-size:12px;color:#4a443a;margin-top:2px}
+.comp .when{font-size:11.5px;color:#8a8172;margin-top:3px;font-style:italic}
 .gest-grid{display:grid;gap:8px;grid-template-columns:repeat(2,1fr);margin-top:12px}
 @media(max-width:540px){.gest-grid{grid-template-columns:1fr}}
-.gest{background:rgba(232,185,106,.1);border:1px solid rgba(232,185,106,.25);border-radius:10px;padding:10px 14px;display:flex;gap:12px;align-items:flex-start}
+.gest{background:var(--cream);border:1px solid rgba(34,30,24,.18);border-radius:10px;padding:10px 14px;display:flex;gap:12px;align-items:flex-start}
 .gest .ico{font-size:24px;flex-shrink:0;width:32px;text-align:center}
-.gest .en{font-weight:800;font-size:14px;color:#e8b96a}
-.gest .zh{font-size:12px;color:rgba(244,239,228,.8);margin-top:2px}
-.gest .how{font-size:11.5px;color:rgba(244,239,228,.6);margin-top:3px}
+.gest .en{font-weight:800;font-size:14px;color:var(--ink)}
+.gest .zh{font-size:12px;color:#4a443a;margin-top:2px}
+.gest .how{font-size:11.5px;color:#8a8172;margin-top:3px}
 .count{font-size:12.5px;color:#8a8172;text-align:center;margin-top:16px}
 
 footer.site{margin-top:56px;background:var(--ink);color:#cfc6b4;padding:32px 0 36px;font-size:13px;text-align:center}
@@ -156,8 +156,8 @@ footer.site a{color:#9fc3e8}
       </div>
     </div>
 
-    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
-      <h2>💬 地道夸人<em style="color:#6fcf97">· 别只会 Nice shot</em></h2>
+    <div class="survival">
+      <h2>💬 地道夸人<em>· 别只会 Nice shot</em></h2>
       <p class="sub">说对这些，你就不是「教科书球友」了。</p>
       <div class="comp-grid">
         <div class="comp"><div class="en">Sweet!</div><div class="zh">太漂亮了！</div><div class="when">任何好球，最通用的口语</div></div>
@@ -171,8 +171,8 @@ footer.site a{color:#9fc3e8}
       </div>
     </div>
 
-    <div class="survival" style="background:rgba(232,185,106,.1);border:1.5px solid rgba(232,185,106,.25)">
-      <h2 style="color:#e8b96a">🤟 手势图解<em style="color:#e8b96a">· 不说话也能沟通</em></h2>
+    <div class="survival">
+      <h2>🤟 手势图解<em>· 不说话也能沟通</em></h2>
       <p class="sub">跨语言球场的通用语——这 6 个手势是打球中最常用的身体信号。</p>
       <div class="gest-grid">
         <div class="gest"><span class="ico">👉</span><div><div class="en">Out!（出界）</div><div class="zh">食指指向外侧或下方</div><div class="how">食指伸出，指向球落地的方向＋喊 Out</div></div></div>
@@ -457,8 +457,8 @@ footer.site a{color:#9fc3e8}
       </div>
     </div>
 
-    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
-      <h2>💬 地道夸人<em style="color:#6fcf97">· 羽毛球圈的说法</em></h2>
+    <div class="survival">
+      <h2>💬 地道夸人<em>· 羽毛球圈的说法</em></h2>
       <div class="comp-grid">
         <div class="comp"><div class="en">Class!</div><div class="zh">有水平！</div><div class="when">英式羽毛球最常用——简洁有力</div></div>
         <div class="comp"><div class="en">Great touch!</div><div class="zh">手感真好！</div><div class="when">对方搓球/放网极其细腻</div></div>
@@ -492,8 +492,8 @@ footer.site a{color:#9fc3e8}
       </div>
     </div>
 
-    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
-      <h2>💬 地道夸人<em style="color:#6fcf97">· 乒乓球圈的说法</em></h2>
+    <div class="survival">
+      <h2>💬 地道夸人<em>· 乒乓球圈的说法</em></h2>
       <div class="comp-grid">
         <div class="comp"><div class="en">Great spin!</div><div class="zh">旋转真强！</div><div class="when">对方发球/弧圈旋转极强</div></div>
         <div class="comp"><div class="en">What a point!</div><div class="zh">这分太精彩了！</div><div class="when">多拍对拉后的致敬</div></div>
