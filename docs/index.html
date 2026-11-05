@@ -65,6 +65,24 @@ section{padding:40px 0 4px}
 .term.call{border-left:4px solid var(--bing)}
 .term.hidden{display:none}
 
+/* survival kit */
+.survival{background:var(--ink);color:#f4efe4;border-radius:18px;padding:24px 22px;margin:0 0 28px}
+.survival h2{font-family:var(--serif);font-size:22px;color:#f4efe4;margin-bottom:4px}
+.survival h2 em{font-style:normal;color:#e8b96a}
+.survival .sub{font-size:13px;color:rgba(244,239,228,.7);margin-bottom:16px}
+.suv-grid{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(max-width:540px){.suv-grid{grid-template-columns:1fr}}
+.suv{background:rgba(244,239,228,.08);border:1px solid rgba(244,239,228,.2);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
+.suv .n{font-family:var(--serif);font-weight:900;font-size:20px;color:#e8b96a;width:28px;flex-shrink:0;text-align:center}
+.suv .en{font-weight:800;font-size:15px;color:#fff}
+.suv .ipa{font-size:12px;color:rgba(244,239,228,.5);margin-left:4px}
+.suv .zh{font-size:13px;color:rgba(244,239,228,.85);margin-top:2px}
+.suv .when{font-size:12px;color:#e8b96a;margin-top:4px;font-style:italic}
+.dialog{background:rgba(244,239,228,.05);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:13px}
+.dialog b{color:#e8b96a}
+.dialog .line{margin:4px 0;color:rgba(244,239,228,.85)}
+.dialog .line .sp{font-weight:700;color:#fff}
+.dialog .arr{color:#8a8172}
 .count{font-size:12.5px;color:#8a8172;text-align:center;margin-top:16px}
 
 footer.site{margin-top:56px;background:var(--ink);color:#cfc6b4;padding:32px 0 36px;font-size:13px;text-align:center}
@@ -100,6 +118,30 @@ footer.site a{color:#9fc3e8}
   <p class="sub">匹克球场上的每一句喊话、每一个术语——中英对照，一查就懂。</p>
 </header>
   <section>
+    <div class="survival">
+      <h2>🎯 记住这 10 句<br>就能和老外<em>无障碍打球</em></h2>
+      <p class="sub">球场上 90% 的对话就这 10 句——先会这些，剩下的慢慢补。</p>
+      <div class="suv-grid">
+        <div class="suv"><span class="n">1</span><div><div class="en">Ball on!<span class="ipa">/bɔːl ɑːn/</span></div><div class="zh">球入侵！立即停</div><div class="when">看到外来球滚入任何场地时大喊</div></div></div>
+        <div class="suv"><span class="n">2</span><div><div class="en">Out!<span class="ipa">/aʊt/</span></div><div class="zh">出界！</div><div class="when">球落界外时落地立刻喊＋手势</div></div></div>
+        <div class="suv"><span class="n">3</span><div><div class="en">Mine!<span class="ipa">/maɪn/</span></div><div class="zh">我的！</div><div class="when">你要接这个球时喊，防止搭档抢拍</div></div></div>
+        <div class="suv"><span class="n">4</span><div><div class="en">Yours!<span class="ipa">/jʊrz/</span></div><div class="zh">你的！</div><div class="when">让搭档接球时喊</div></div></div>
+        <div class="suv"><span class="n">5</span><div><div class="en">Nice shot!<span class="ipa">/naɪs ʃɑːt/</span></div><div class="zh">好球！</div><div class="when">对方或搭档打出好球时说</div></div></div>
+        <div class="suv"><span class="n">6</span><div><div class="en">Score?<span class="ipa">/skɔːr/</span></div><div class="zh">比分多少？</div><div class="when">忘了比分时问——不算丢人</div></div></div>
+        <div class="suv"><span class="n">7</span><div><div class="en">Let it go<span class="ipa">/lɛt ɪt ɡoʊ/</span></div><div class="zh">让它飞！</div><div class="when">球要出底线时提醒搭档别接</div></div></div>
+        <div class="suv"><span class="n">8</span><div><div class="en">Switch!<span class="ipa">/swɪtʃ/</span></div><div class="zh">换位！</div><div class="when">抢网后或被挑高球时喊搭档换位</div></div></div>
+        <div class="suv"><span class="n">9</span><div><div class="en">Kitchen!<span class="ipa">/ˈkɪtʃɪn/</span></div><div class="zh">厨房违例！</div><div class="when">对方凌空时踩厨房线——你喊出来</div></div></div>
+        <div class="suv"><span class="n">10</span><div><div class="en">Good game!<span class="ipa">/ɡʊd ɡeɪm/</span></div><div class="zh">打得好！</div><div class="when">结束后碰拍时说——每局必说</div></div></div>
+      </div>
+      <div class="dialog">
+        <b>📖 实战对话流</b>
+        <div class="line"><span class="sp">你（发球前）：</span>"Zero, zero, two!" <span class="arr">→</span> 发球 <span class="arr">→</span> <span class="sp">对方：</span>"Nice serve!"</div>
+        <div class="line"><span class="sp">对方球出底线：</span>你 "Out!" <span class="arr">→</span> <span class="sp">对方：</span>"You sure?" <span class="arr">→</span> <span class="sp">你：</span>"Yes, out by this much!"</div>
+        <div class="line"><span class="sp">外来球滚入：</span>任何人 "Ball on!" <span class="arr">→</span> 所有人停 <span class="arr">→</span> 重打该分</div>
+        <div class="line"><span class="sp">比赛结束：</span>"Good game!" <span class="arr">→</span> 网前碰拍 <span class="arr">→</span> "Same time next week?"</div>
+      </div>
+    </div>
+
     <div class="cat-h"><span class="icon">🗣️</span><b>呼报 Calls</b><small>场上喊出来的话——不懂就社死</small></div>
     <div class="grid">
       <div class="term call"><div class="en">Ball on!</div><div class="zh">球入侵！立即停</div><div class="use">外来球滚入本方场地时大喊，所有人停下，该分重打。安全永远比分值大。</div></div>
@@ -352,7 +394,49 @@ footer.site a{color:#9fc3e8}
 </header>
 
   <section>
-    <div class="cat-h"><span class="icon">🗣️</span><b>呼报 Calls</b></div>
+    <div class="survival">
+      <h2>🎯 记住这 8 句<br>羽毛球场上和老外<em>无障碍沟通</em></h2>
+      <p class="sub">羽毛球国际赛场上最常用的 8 句话——有了这些就能打完整场。</p>
+      <div class="suv-grid">
+        <div class="suv"><span class="n">1</span><div><div class="en">Love all — play<span class="ipa">/lʌv ɔːl/</span></div><div class="zh">零比零，开始</div><div class="when">裁判开局宣告，听到就该发球了</div></div></div>
+        <div class="suv"><span class="n">2</span><div><div class="en">Service over</div><div class="zh">换发</div><div class="when">发球方输了，发球权给对方</div></div></div>
+        <div class="suv"><span class="n">3</span><div><div class="en">In / Out</div><div class="zh">界内 / 出界</div><div class="when">注意：单打窄场、双打宽场——边线不同！</div></div></div>
+        <div class="suv"><span class="n">4</span><div><div class="en">Fault</div><div class="zh">违例</div><div class="when">发球过1.15m/触网/连击等</div></div></div>
+        <div class="suv"><span class="n">5</span><div><div class="en">Let</div><div class="zh">重发球</div><div class="when">双方同时违例或有干扰时</div></div></div>
+        <div class="suv"><span class="n">6</span><div><div class="en">Nice smash!</div><div class="zh">好杀球！</div><div class="when">对方杀球得分时说</div></div></div>
+        <div class="suv"><span class="n">7</span><div><div class="en">Game point</div><div class="zh">局点</div><div class="when">对方再得一分就赢本局</div></div></div>
+        <div class="suv"><span class="n">8</span><div><div class="en">Good game!</div><div class="zh">打得好！</div><div class="when">结束后握手说</div></div></div>
+      </div>
+      <div class="dialog">
+        <b>📖 实战对话流</b>
+        <div class="line"><span class="sp">裁判：</span>"Love all — play!" <span class="arr">→</span> 发球 <span class="arr">→</span> <span class="sp">得分后：</span>"1–0, service over"</div>
+        <div class="line"><span class="sp">你打出好球：</span>对方 "Nice shot!" <span class="arr">→</span> <span class="sp">你：</span>"Thanks! Lucky one."</div>
+        <div class="line"><span class="sp">局末：</span>"Game point, 20–15!" <span class="arr">→</span> 得分 <span class="arr">→</span> "Game! 21–15."</div>
+      </div>
+    </div>
+
+<div class="survival">
+      <h2>🎯 记住这 8 句<br>乒乓球台上和老外<em>无障碍沟通</em></h2>
+      <p class="sub">乒乓球场上最常用的 8 句话——特别是和外国球友打友谊赛。</p>
+      <div class="suv-grid">
+        <div class="suv"><span class="n">1</span><div><div class="en">Let<span class="ipa">/lɛt/</span></div><div class="zh">擦网，重发</div><div class="when">发球擦网落台——重发</div></div></div>
+        <div class="suv"><span class="n">2</span><div><div class="en">Point</div><div class="zh">得分</div><div class="when">"Point to Ma Long!" = 这一分马龙的</div></div></div>
+        <div class="suv"><span class="n">3</span><div><div class="en">Deuce<span class="ipa">/djuːs/</span></div><div class="zh">平分（10:10）</div><div class="when">须净胜 2 分，无封顶</div></div></div>
+        <div class="suv"><span class="n">4</span><div><div class="en">Edge ball</div><div class="zh">擦边球</div><div class="when">球擦台面顶边——有效！要举手示意</div></div></div>
+        <div class="suv"><span class="n">5</span><div><div class="en">Game point</div><div class="zh">局点</div><div class="when">再得 1 分赢本局</div></div></div>
+        <div class="suv"><span class="n">6</span><div><div class="en">Nice loop!<span class="ipa">/luːp/</span></div><div class="zh">好弧圈！</div><div class="when">对方拉出高质量弧圈时说</div></div></div>
+        <div class="suv"><span class="n">7</span><div><div class="en">Fault</div><div class="zh">发球违例</div><div class="when">抛球不够高/有旋转/遮挡</div></div></div>
+        <div class="suv"><span class="n">8</span><div><div class="en">Good game!</div><div class="zh">打得好！</div><div class="when">结束后握手说</div></div></div>
+      </div>
+      <div class="dialog">
+        <b>📖 实战对话流</b>
+        <div class="line"><span class="sp">发球擦网：</span>裁判 "Let!" <span class="arr">→</span> 重发 <span class="arr">→</span> <span class="sp">你：</span>"Sorry, net."</div>
+        <div class="line"><span class="sp">打出擦边：</span>"Edge ball! Sorry!" <span class="arr">→</span> 举手 <span class="arr">→</span> <span class="sp">对方：</span>"Lucky!"</div>
+        <div class="line"><span class="sp">局末：</span>"Game point, 10–9!" <span class="arr">→</span> 得分 <span class="arr">→</span> "Game! 11–9."</div>
+      </div>
+    </div>
+
+<div class="cat-h"><span class="icon">🗣️</span><b>呼报 Calls</b></div>
     <div class="grid">
       <div class="term call"><div class="en">Let</div><div class="zh">重发球</div><div class="use">发球擦网落入对角台面＝let 重发，次数不限。</div></div>
       <div class="term call"><div class="en">Point</div><div class="zh">得分</div><div class="use">每球得分制，一局 11 分，10 平净胜 2。</div></div>
