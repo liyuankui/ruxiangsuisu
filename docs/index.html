@@ -83,6 +83,20 @@ section{padding:40px 0 4px}
 .dialog .line{margin:4px 0;color:rgba(244,239,228,.85)}
 .dialog .line .sp{font-weight:700;color:#fff}
 .dialog .arr{color:#8a8172}
+/* compliments & gestures */
+.comp-grid{display:grid;gap:8px;grid-template-columns:repeat(2,1fr);margin-top:12px}
+@media(max-width:540px){.comp-grid{grid-template-columns:1fr}}
+.comp{background:rgba(46,110,78,.12);border:1px solid rgba(46,110,78,.3);border-radius:10px;padding:10px 14px}
+.comp .en{font-weight:800;font-size:14px;color:#6fcf97}
+.comp .zh{font-size:12px;color:rgba(244,239,228,.8);margin-top:2px}
+.comp .when{font-size:11.5px;color:#e8b96a;margin-top:3px;font-style:italic}
+.gest-grid{display:grid;gap:8px;grid-template-columns:repeat(2,1fr);margin-top:12px}
+@media(max-width:540px){.gest-grid{grid-template-columns:1fr}}
+.gest{background:rgba(232,185,106,.1);border:1px solid rgba(232,185,106,.25);border-radius:10px;padding:10px 14px;display:flex;gap:12px;align-items:flex-start}
+.gest .ico{font-size:24px;flex-shrink:0;width:32px;text-align:center}
+.gest .en{font-weight:800;font-size:14px;color:#e8b96a}
+.gest .zh{font-size:12px;color:rgba(244,239,228,.8);margin-top:2px}
+.gest .how{font-size:11.5px;color:rgba(244,239,228,.6);margin-top:3px}
 .count{font-size:12.5px;color:#8a8172;text-align:center;margin-top:16px}
 
 footer.site{margin-top:56px;background:var(--ink);color:#cfc6b4;padding:32px 0 36px;font-size:13px;text-align:center}
@@ -139,6 +153,36 @@ footer.site a{color:#9fc3e8}
         <div class="line"><span class="sp">对方球出底线：</span>你 "Out!" <span class="arr">→</span> <span class="sp">对方：</span>"You sure?" <span class="arr">→</span> <span class="sp">你：</span>"Yes, out by this much!"</div>
         <div class="line"><span class="sp">外来球滚入：</span>任何人 "Ball on!" <span class="arr">→</span> 所有人停 <span class="arr">→</span> 重打该分</div>
         <div class="line"><span class="sp">比赛结束：</span>"Good game!" <span class="arr">→</span> 网前碰拍 <span class="arr">→</span> "Same time next week?"</div>
+      </div>
+    </div>
+
+    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
+      <h2>💬 地道夸人<em style="color:#6fcf97">· 别只会 Nice shot</em></h2>
+      <p class="sub">说对这些，你就不是「教科书球友」了。</p>
+      <div class="comp-grid">
+        <div class="comp"><div class="en">Sweet!</div><div class="zh">太漂亮了！</div><div class="when">任何好球，最通用的口语</div></div>
+        <div class="comp"><div class="en">What a get!</div><div class="zh">救得太牛了！</div><div class="when">对方追到一个快死的球</div></div>
+        <div class="comp"><div class="en">Great hands!</div><div class="zh">手速真快！</div><div class="when">对方赢下网前手速战</div></div>
+        <div class="comp"><div class="en">Unbelievable!</div><div class="zh">离谱！</div><div class="when">打出你意想不到的球</div></div>
+        <div class="comp"><div class="en">That was filthy!</div><div class="zh">太脏了！（狠！）</div><div class="when">年轻人口语——极其厉害的制胜球</div></div>
+        <div class="comp"><div class="en">You're on fire!</div><div class="zh">你今天着了！</div><div class="when">对方连得数分时说</div></div>
+        <div class="comp"><div class="en">Butter!</div><div class="zh">丝滑！</div><div class="zh" style="display:none"></div><div class="when">极其顺滑的放短/reset</div></div>
+        <div class="comp"><div class="en">Well played!</div><div class="zh">打得好！</div><div class="when">英式——比赛结束时必说</div></div>
+      </div>
+    </div>
+
+    <div class="survival" style="background:rgba(232,185,106,.1);border:1.5px solid rgba(232,185,106,.25)">
+      <h2 style="color:#e8b96a">🤟 手势图解<em style="color:#e8b96a">· 不说话也能沟通</em></h2>
+      <p class="sub">跨语言球场的通用语——手势对了，一个词不说也能打完整场。</p>
+      <div class="gest-grid">
+        <div class="gest"><span class="ico">☝️</span><div><div class="en">Out!（出界）</div><div class="zh">食指指向外侧或下方</div><div class="how">食指伸出，指向球落地的方向＋喊 Out</div></div></div>
+        <div class="gest"><span class="ico">🫳</span><div><div class="en">In（界内）</div><div class="zh">掌心朝下平挥</div><div class="how">手掌平放、掌心朝下向地面压——「在线内」</div></div></div>
+        <div class="gest"><span class="ico">✋</span><div><div class="en">Ball on!（停）</div><div class="zh">举起张开的手掌</div><div class="how">任何一只手举高、掌心朝外——所有人停下</div></div></div>
+        <div class="gest"><span class="ico">🏓</span><div><div class="en">Good game（碰拍）</div><div class="zh">举起球拍轻碰</div><div class="how">比赛结束后网前举拍轻碰——匹克球的握手</div></div></div>
+        <div class="gest"><span class="ico">👎</span><div><div class="en">Let it go（别接）</div><div class="zh">手向外挥</div><div class="how">手掌向外推挥——「别碰，会出界」</div></div></div>
+        <div class="gest"><span class="ico">🆗</span><div><div class="en">Ready？（准备好了吗）</div><div class="zh">举拍＋眼神接触</div><div class="how">发球前举拍示意＋看向对方＋点头</div></div></div>
+        <div class="gest"><span class="ico">🅃</span><div><div class="en">Time-out（暂停）</div><div class="zh">双手比 T</div><div class="how">两只手一横一竖组成 T 形＋喊 Time out</div></div></div>
+        <div class="gest"><span class="ico">👍</span><div><div class="en">Nice shot（好球）</div><div class="zh">竖大拇指或举拍</div><div class="how">对方打出好球时——最简单的跨语言赞美</div></div></div>
       </div>
     </div>
 
@@ -415,6 +459,20 @@ footer.site a{color:#9fc3e8}
       </div>
     </div>
 
+    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
+      <h2>💬 地道夸人<em style="color:#6fcf97">· 羽毛球圈的说法</em></h2>
+      <div class="comp-grid">
+        <div class="comp"><div class="en">Class!</div><div class="zh">有水平！</div><div class="when">英式羽毛球最常用——简洁有力</div></div>
+        <div class="comp"><div class="en">Great touch!</div><div class="zh">手感真好！</div><div class="when">对方搓球/放网极其细腻</div></div>
+        <div class="comp"><div class="en">What a rally!</div><div class="zh">这个回合太精彩了！</div><div class="when">双方多拍相持后——给双方的致敬</div></div>
+        <div class="comp"><div class="en">Incredible defense!</div><div class="zh">防守太离谱了！</div><div class="when">对方连续救起你的杀球</div></div>
+        <div class="comp"><div class="en">Bullet!</div><div class="zh">子弹！（快！）</div><div class="when">对方平抽快到看不清</div></div>
+        <div class="comp"><div class="en">Great angle!</div><div class="zh">角度真刁！</div><div class="when">对方斜线打得你跑不动</div></div>
+        <div class="comp"><div class="en">Lucky net!</div><div class="zh">运气球！（滚网）</div><div class="when">擦网得分——对方主动说表示谦虚</div></div>
+        <div class="comp"><div class="en">Well played!</div><div class="zh">打得好！</div><div class="when">比赛结束时必说</div></div>
+      </div>
+    </div>
+
 <div class="survival">
       <h2>🎯 记住这 8 句<br>乒乓球台上和老外<em>无障碍沟通</em></h2>
       <p class="sub">乒乓球场上最常用的 8 句话——特别是和外国球友打友谊赛。</p>
@@ -433,6 +491,20 @@ footer.site a{color:#9fc3e8}
         <div class="line"><span class="sp">发球擦网：</span>裁判 "Let!" <span class="arr">→</span> 重发 <span class="arr">→</span> <span class="sp">你：</span>"Sorry, net."</div>
         <div class="line"><span class="sp">打出擦边：</span>"Edge ball! Sorry!" <span class="arr">→</span> 举手 <span class="arr">→</span> <span class="sp">对方：</span>"Lucky!"</div>
         <div class="line"><span class="sp">局末：</span>"Game point, 10–9!" <span class="arr">→</span> 得分 <span class="arr">→</span> "Game! 11–9."</div>
+      </div>
+    </div>
+
+    <div class="survival" style="background:rgba(46,110,78,.15);border:1.5px solid rgba(46,110,78,.3)">
+      <h2>💬 地道夸人<em style="color:#6fcf97">· 乒乓球圈的说法</em></h2>
+      <div class="comp-grid">
+        <div class="comp"><div class="en">Great spin!</div><div class="zh">旋转真强！</div><div class="when">对方发球/弧圈旋转极强</div></div>
+        <div class="comp"><div class="en">What a point!</div><div class="zh">这分太精彩了！</div><div class="when">多拍对拉后的致敬</div></div>
+        <div class="comp""><div class="en">Amazing rally!</div><div class="zh">对拉太牛了！</div><div class="when">中远台对拉——最高致敬</div></div>
+        <div class="comp"><div class="en">Great serve!</div><div class="zh">发球真好！</div><div class="when">对方发球你完全判断不了旋转</div></div>
+        <div class="comp"><div class="en">So consistent!</div><div="zh">太稳了！</div><div class="when">对方几乎不失误</div></div>
+        <div class="comp"><div class="en">Perfect timing!</div><div class="zh">时机抓得太准了！</div><div class="when">对方侧身抢拉一板致命</div></div>
+        <div class="comp"><div class="en">Touch!</div><div class="zh">手感！</div><div class="when">对方摆短/挑打极其精细</div></div>
+        <div class="comp"><div class="en">Good game!</div><div class="zh">打得好！</div><div class="when">比赛结束后握手时说</div></div>
       </div>
     </div>
 
